@@ -114,7 +114,7 @@ def load_fastx_generato(file):
           if n == 0:
             # read == []
             # 第一次循环开始
-            read.append(line)  # add header!
+            read.append(line)  # add header! 注意使用后我们需要调用下一行
             line = f.readline().rstrip()
           elif n == 4:
             # read == ['header', 'seq', 'info', 'quality']

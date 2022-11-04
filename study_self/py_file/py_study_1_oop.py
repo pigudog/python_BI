@@ -1,7 +1,7 @@
 # object-oriented programming
 
 
-class Box()
+class Box():
   """box - open and close"""
   def open_door(self):
     pass

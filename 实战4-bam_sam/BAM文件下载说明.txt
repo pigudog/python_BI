@@ -1,0 +1,4 @@
+本次课程涉及到的BAM文件，由于体积较大需要通过baidu网盘进行下载
+
+利用Python进行生信分析
+链接: https://pan.baidu.com/s/1njCBZI_ezhvzV57qjpzz3g  密码:65ld

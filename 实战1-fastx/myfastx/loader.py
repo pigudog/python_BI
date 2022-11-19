@@ -4,6 +4,8 @@ FASTA 读取
 ...
 """
 import gzip
+import os,sys
+os.chdir(sys.path[0])
 
 
 def load_fastx(file: str) -> list:
@@ -236,8 +238,8 @@ def load_fastx_generator(file):
     f.close()
 
 if __name__ == '__main__':
-    FQ_TEST = '../2022-09-25_Prepared_data/FASTQ/fake_fq.fastq'
-    FA_TEST = '../2022-09-25_Prepared_data/FASTA/fake_fa.fasta'
+    FQ_TEST = 'fake_fq.txt'
+    FA_TEST = './fake_fa.txt'
     # ls = load_fastx(file=FQ_TEST)
     # print(ls)
     # print(ls[-1][0])
@@ -265,7 +267,7 @@ if __name__ == '__main__':
     #         break
 
 
-    it = load_fastx_generator(file=FA_TEST)
+    it = load_fastx_generator(file=FQ_TEST)
     print(it)
     # print(next(it))
     # print(next(it))
